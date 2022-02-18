@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2:wght@500&family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    background-color: rgb(100, 18, 100);
+    color: white;
+    height: 75px;
+    display: flex;
+    font-size: 27px;
+    align-items: center;
+    padding-left: 12px;
+    font-family: 'Roboto', sans-serif;
+}
+nav ul{
+    list-style-type: none;
+}
+.gameContainer{
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.container{
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+    font-family:'Roboto', sans-serif;
+}
+.box{
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: rgb(186, 153, 216);
+
+}
+.gameinfo{
+    padding-left: 34px;
+    font-family: 'Baloo Bhaina 2', cursive;
+}
+.gameinfo h1{
+    font-size: 3rem;
+}
+.imgbox img{
+    width: 0px;
+    transition: width 1s ease-in-out;
+}
+.bt-0{
+    border-top: 0px;
+}
+.bb-0{
+    border-bottom: 0px;
+}
+.bl-0{
+    border-left: 0px;
+}
+.br-0{
+    border-right: 0px;
+}
+#reset{
+   margin-left: 23px;
+   margin-right: 23px;
+   padding: 3px 5px;
+   background-color: rgb(106, 177, 218);
+   font-size: large;
+   border-radius: 10px;
+   cursor: pointer;
+   font-weight: bold;
+   font-family: 'Baloo Bhaina 2', cursive;
+}
+.info{
+    font-size: 25px;
+    color: darkgreen;
+    font-weight: bold;
+}
+/*.line{
+    background-color: black;
+    width: 0;
+    height: 3px;
+    position: absolute;
+    background-color: blueviolet;
+    border-radius: 7px;
+    transition: width 1s ease-in-out;
+}*/
+@media screen and (max-width: 950px)
+{
+.gameContainer{
+    flex-wrap: wrap;
+   }
+.gameinfo{
+    margin-top: 34px;
+}   
+.gameinfo h1{
+    font-size: 1.5rem;
+}
+.container{
+    grid-template-columns: repeat(3,20vw);
+    grid-template-rows: repeat(3,20vw);
+}
+}
